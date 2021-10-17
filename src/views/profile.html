@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/includeHTML.js"></script>
+    <link rel='stylesheet' type="text/css" href='/stylesheets/base.css' />
+    <link rel='stylesheet' type="text/css" href='/stylesheets/profile.css' />
+    
+    <title>Profile</title>
+</head>
+<body>
+    <header include-html="./header.html"></header>
+    <content class="profile-content">
+        <div class="content-title">
+            <span>Profile</span>
+        </div>
+        <div id="frontend">
+            <h3>Frontend</h3>
+            <div class="skill-block">
+                <div>
+                    <img src="/image/html.png">
+                </div>
+                <div>
+                    <img src="/image/css.png">
+                </div>
+                <div>
+                    <img src="/image/javascript.png">
+                </div>
+                <div>
+                    <img src="/image/pug.png">
+                </div>
+            </div>
+        </div>
+        <div id="backend">
+            <h3>Backend</h3>
+            <div class="skill-block">
+                <div>
+                    <img src="/image/nodeJS.png">
+                </div>
+                <div>
+                    <img src="/image/express.png">
+                </div>
+                <div>
+                    <img src="/image/mongoDB.png">
+                </div>
+            </div>
+        </div>
+    </content>
+    <br>
+    <footer include-html="./footer.html"></footer>
+</body>
+
+<script>
+    includeHTML();
+</script>
+
+</html>
