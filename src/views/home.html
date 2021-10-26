@@ -4,17 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./js/includeHTML.js"></script>
-    <link rel='stylesheet' type="text/css" href='/stylesheets/base.css' />
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <link rel='stylesheet' type="text/css" href='/stylesheets/home.css' />
 
     <title>Portfolio</title>
 </head>
 <body>
-    <header include-html="./header.html"></header>
+    <header class="header-class">
+        <div class="header_wrap">
+            <h1 class="header_title">
+                    <a href="#">Hello, Portfolio World</a>
+            </h1>
+            <nav class="gnb">
+                <h2 class="main_menu">메인메뉴</h2>
+                <ul class = "gnb_list">
+                    <li class="btn">
+                        <a href="#home" data-tabnum="0">Home</a>
+                    </li>
+                    <li class="btn">
+                        <a href="#profile" data-tabnum="1">Profile</a>
+                    </li>
+                    <li class="btn">
+                        <a href="#project" data-tabnum="2">Project</a>
+                    </li>
+                    <li class="btn">
+                        <a href="#contact" data-tabnum="3">contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btn_hamburger">
+                <button id="burger_icon">
+                    <!--icon url: https://icons8.com/icons/set/x-->
+                    <img src="/image/hamburger2.png" width="30" height="30">
+                </button>
+                <button id="close_icon">
+                    <img src="/image/close.png" width="30" height="30">
+                </button>
+            </div>
+            <div class="hamburger_slide" id="hamburger_slide">
+                <nav class="inner_gnb">
+                    <h2 class="main_menu">메인메뉴</h2>
+                    <ul>
+                        <li class="btn">
+                            <a href="#home" data-tabnum="0">Home</a>
+                        </li>
+                        <li class="btn">
+                            <a href="#profile" data-tabnum="1">Profile</a>
+                        </li>
+                        <li class="btn"> 
+                            <a href="#project" data-tabnum="2">Project</a>
+                        </li>
+                        <li class="btn">
+                            <a href="#contact" data-tabnum="3">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
     <content>
-        <section class="home-content">
-            <div class="content-title">
+        <section>
+            <div>
                 <span>Home</span>
             </div>
             <div>
@@ -22,13 +75,13 @@
             </div>
         </section>
 
-        <section class="profile-content">
-            <div class="content-title">
+        <section>
+            <div>
                 <span>Profile</span>
             </div>
-            <div id="frontend">
+            <div>
                 <h3>Frontend</h3>
-                <div class="skill-block">
+                <div>
                     <div>
                         <img src="/image/html.png">
                     </div>
@@ -43,9 +96,9 @@
                     </div>
                 </div>
             </div>
-            <div id="backend">
+            <div>
                 <h3>Backend</h3>
-                <div class="skill-block">
+                <div>
                     <div>
                         <img src="/image/nodeJS.png">
                     </div>
@@ -59,57 +112,57 @@
             </div>
         </section>
         
-        <section class="porject-content">
-            <div class="content-title">
+        <section>
+            <div>
                 <span>Projects</span>
             </div>
             <div>
-                <ul class="project-box">
-                    <li class="project-block">
-                        <div class="project-title">
+                <ul>
+                    <li>
+                        <div>
                             <em>Wetube</em>
                         </div>
                         <div>
                             <span>프로젝트 한줄 설명</span>
-                            <div class="project-btn">
-                                <a class="btn" href="#views">View</a>
-                                <a class="btn" href="#github">Github</a>
+                            <div>
+                                <a>View</a>
+                                <a>Github</a>
                             </div>
                         </div>
                     </li>
-                    <li class="project-block">
-                        <div class="project-title">
+                    <li>
+                        <div>
                             <em>Toy Project1</em>
                         </div>
                         <div>
                             <span>프로젝트 한줄 설명</span>
-                            <div class="project-btn">
-                                <a class="btn" href="#views">View</a>
-                                <a class="btn" href="#github">Github</a>
+                            <div>
+                                <a>View</a>
+                                <a>Github</a>
                             </div>
                         </div>
                     </li>
-                    <li class="project-block">
-                        <div class="project-title">
+                    <li>
+                        <div>
                             <em>Toy Project2</em>
                         </div>
                         <div>
                             <span>프로젝트 한줄 설명</span>
-                            <div class="project-btn">
-                                <a class="btn" href="#views">View</a>
-                                <a class="btn" href="#github">Github</a>
+                            <div>
+                                <a>View</a>
+                                <a>Github</a>
                             </div>
                         </div>
                     </li>
-                    <li class="project-block">
-                        <div class="project-title">
+                    <li>
+                        <div>
                             <em>Toy Project3</em>
                         </div>
                         <div>
                             <span>프로젝트 한줄 설명</span>
-                            <div class="project-btn">
-                                <a class="btn" href="#views">View</a>
-                                <a class="btn" href="#github">Github</a>
+                            <div>
+                                <a>View</a>
+                                <a>Github</a>
                             </div>
                         </div>
                     </li>
@@ -117,19 +170,19 @@
             </div>
         </section>
 
-        <section class="contact-content">
-            <div class="content-title">
+        <section>
+            <div>
                 <span>Contact</span>
             </div>
         </section>
 
     </content>
     <br>
-    <footer include-html="./footer.html"></footer>
+    <footer>
+        <div>
+            @2021 권윤경 all right reserved.
+        </div>
+    </footer>
 </body>
-
-<script>
-    includeHTML();
-</script>
 
 </html>
