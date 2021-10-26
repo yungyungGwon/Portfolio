@@ -1,13 +1,17 @@
 :root {
-    --navbar-height: 60px;
+    --navbar-height: 58px;
     --white:#fff;
+    --black:#000;
+}
+body{
+    font-family: 'Source Sana Pro';
 }
 ul li {
-    float:left;
     list-style: none;
     text-decoration: none;
 }
 a{
+    color: var(--black);
     outline-style: none;
     text-decoration: none;
 }
@@ -22,13 +26,38 @@ button{
     background-color: transparent;
 }
 /*header*/
-@media (max-width: 700px){
+@media screen and (max-width: 768px){
+    .header_wrap{
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .gnb{
+        width: 100%;
         display: none;
     }
+    .gnb_list{
+        flex-direction: column;
+    }
+    .gnb_list li{
+        text-align: center;
+    }    
+    #burger_icon{
+        display: block;
+    }
+    #close_icon{
+        display: none;
+    }
+
+    .gnb.active, #close_icon.active{
+        display: block;
+    }
+    #burger_icon.active{
+        display: none;
+    }
+
 }
-@media (min-width: 700px){
-    .btn_hamburger {
+@media (min-width: 768px){
+    .btn_hamburger{
         display: none;
     }
 }
@@ -42,62 +71,45 @@ button{
     background-color:var(--white);
 }
 .header_wrap{
-    width:90%;
-    height:60px;
-    margin:0 auto;
+    display: flex;
+    padding: 8px 12px; 
+    justify-content: space-between;
 }
-.header_title{ 
-    width:30%;
-    height:24px;
-    margin:0;
-    float:left;
-    display:block;
-    font-size: 15px;
-    padding-top:20px;
+.header_title{
+    padding-top: 10px;
+    margin: 0;
+    font-size: 20px;
 }
 .gnb{
-    float: right;
-    text-align: center;
+    font-size: 18px;
 }
 .main_menu{
     display: none;
 }
 .gnb_list{
     margin:0;
-    padding:20px 0 0 0;
-    display: inline-block;
+    padding-left:0;
+    display: flex;
 }
-.btn a{
-    padding: 0 15px;
-    line-height: 24px;
+.gnb_list li{
+    padding:8px 12px;
+}
+.gnb_list li>a:hover{
+    color:plum;
 }
 .btn_hamburger{
-    padding-top:10px;
-    float: right;
-}
-.hamburger_slide{
-    width: 100%;
-    margin: 0;
+    right:32px;
     position: absolute;
-    top: var(--navbar-height);
-    left:0;
-    right:0;
-    background-color:var(--white);
-    display: none;
-}
-.inner_gnb ul {
-    margin:0;
-}
-.inner_gnb ul li{
-    float:none;
-}
-
-#burger_icon{
-    display: block;
-}
-
-#close_icon{
-    display: none;
 }
 
 /*content*/
+.content-class section{
+    display:none;
+    padding-top: var(--navbar-height);
+}
+.content-class .content:first-child {
+    display: block;
+}
+.content_title{
+    display: none;
+}

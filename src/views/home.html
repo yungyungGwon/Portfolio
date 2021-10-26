@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/script.js" defer></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <link rel='stylesheet' type="text/css" href='/stylesheets/home.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <title>Portfolio</title>
 </head>
@@ -37,45 +38,30 @@
             <div class="btn_hamburger">
                 <button id="burger_icon">
                     <!--icon url: https://icons8.com/icons/set/x-->
-                    <img src="/image/hamburger2.png" width="30" height="30">
+                    <img src="/image/hamburger2.png" width="35" height="35">
                 </button>
                 <button id="close_icon">
-                    <img src="/image/close.png" width="30" height="30">
+                    <img src="/image/close.png" width="35" height="35">
                 </button>
-            </div>
-            <div class="hamburger_slide" id="hamburger_slide">
-                <nav class="inner_gnb">
-                    <h2 class="main_menu">메인메뉴</h2>
-                    <ul>
-                        <li class="btn">
-                            <a href="#home" data-tabnum="0">Home</a>
-                        </li>
-                        <li class="btn">
-                            <a href="#profile" data-tabnum="1">Profile</a>
-                        </li>
-                        <li class="btn"> 
-                            <a href="#project" data-tabnum="2">Project</a>
-                        </li>
-                        <li class="btn">
-                            <a href="#contact" data-tabnum="3">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </header>
     
-    <content>
-        <section>
-            <div>
+    <content class="content-class">
+        <section class="home content">
+            <div class="content_title">
                 <span>Home</span>
             </div>
             <div>
-                추후 title 사진 및 txt로 변경 예정
+                <img src="/image/gyg_1.png" width=500 height=500>
             </div>
+            <div>
+                안녕하세요,프론트엔드 개발자 권윤경입니다.
+            </div>
+            
         </section>
 
-        <section>
+        <section class="profile content">
             <div>
                 <span>Profile</span>
             </div>
@@ -112,7 +98,7 @@
             </div>
         </section>
         
-        <section>
+        <section class="project content">
             <div>
                 <span>Projects</span>
             </div>
@@ -170,7 +156,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="contact content">
             <div>
                 <span>Contact</span>
             </div>
