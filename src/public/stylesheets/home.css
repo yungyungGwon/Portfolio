@@ -2,9 +2,14 @@
     --navbar-height: 58px;
     --white:#fff;
     --black:#000;
+    --blue:rgb(35,102,246);
+    --navy:rgb(26,31,39);
+    --gray: rgb(177,184,192);
 }
 body{
     font-family: 'Source Sana Pro';
+    margin:0;
+    padding:0;
 }
 ul li {
     list-style: none;
@@ -95,7 +100,7 @@ button{
     padding:8px 12px;
 }
 .gnb_list li>a:hover{
-    color:plum;
+    color: var(--blue);
 }
 .btn_hamburger{
     right:32px;
@@ -112,4 +117,44 @@ button{
 }
 .content_title{
     display: none;
+}
+/**home content**/
+@media (max-width: 1000px){
+    .home_right{
+        float:none;
+        width:100%;
+        height:360px;
+        margin:0 auto;
+    }
+    .home_left{
+        float:none;
+        width:100%;
+        margin:0 auto;
+    }
+}
+.home{
+    width:100%;
+    height:950px;
+}
+.home_right{
+    float:right;
+    width:40%;
+    height:400px;
+    background: url(../image/gyg_1.png) no-repeat center;
+}
+.home_left{
+    float:left;
+    width:60%;
+    height:400px;
+    text-align: center;
+    padding-top:150px;
+}
+
+/*footer*/
+footer{
+    float:left;
+    width: 100%;
+    height:80px;
+    background-color: var(--navy);
+    color: var(--gray);
 }
