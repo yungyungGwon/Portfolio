@@ -4,12 +4,17 @@
     --black:#000;
     --blue:rgb(35,102,246);
     --navy:rgb(26,31,39);
+    --navy2: rgb(47,67,108);
     --gray: rgb(177,184,192);
+    --red: rgb(231, 101, 90);
+    --gray2: rgb(252, 252, 252);
+    --gray3:rgb(238,238,238);
 }
 body{
     font-family: 'Source Sana Pro';
     margin:0;
     padding:0;
+    background-color: var(--white);
 }
 ul li {
     list-style: none;
@@ -162,12 +167,7 @@ button{
     margin: 0 auto;
     padding-top:150px;
 }
-    /**profile content**/
-/*@media (max-width: 1210px){
-    .profile .container{
-        flex-direction:row;
-    }
-}*/
+/**profile content**/
 .profile{
     width:100%;
 }
@@ -184,13 +184,20 @@ button{
 .front_skills{
     width: 100%;
 }
+.front_skills h3{
+    padding:0 50px;
+}
+.back_skills h3{
+    padding:0 50px;
+}
 .skill_block{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 54px;
-    justify-content: space-between;
+    padding: 0 55px;
+    
 }
 .skill_block div{
+    padding:35px;
     text-align: center;
 }
 .skill_block span{
@@ -199,6 +206,11 @@ button{
     display: inline-block;
     border-radius: 50%;
     overflow: hidden;
+}
+.line{
+    width:95%;
+    margin:0 auto;
+    border-bottom: 1px solid var(--gray);
 }
 .html5{
     background: url(../image/html.png) no-repeat center/84%;
@@ -221,7 +233,92 @@ button{
 .mongoDB{
     background: url(../image/mongoDB.png) no-repeat center/99%;  
 }
+/**projects content**/
+.project_block{
+    width:100%;   
+}
+.project_block ul{
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 12px; 
+    justify-content: center
+}
+.project_block ul li{
+    width: 415px;
+    height:280px;
+    padding: 10px 12px;
+    text-align: center;
+}
+.project_title{
+    width:100%;
+    height:100px;
+    padding-top:50px;
+    font-size: 30px;
+    color:var(--white);
+    border:1px solid var(--navy2);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--navy2);
+    box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.1);
+}
+.project_review{
+    width:100%;
+    height:80px;
+    font-size: 16px;
+    border:1px solid var(--gray2);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--gray2);
+    box-shadow: 2px 1px 10px 1px rgba(0,0,0,0.1);
+}
+.project_txt{
+    margin: 7px 0;
+}
+.project_button{
+    margin-top: 12px;
+}
+.project_button a{
+    margin: 0 4px;
+    padding: 8px 20px;
+    cursor: pointer;
+    border: 1px solid var(--gray3);
+    border-radius: 20px;
+    background-color: var(--gray3);
+}
 
+/**contact content**/
+.form {
+    width:60%;
+    margin:0 auto;
+}
+.form input{
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0,0,0,0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:  1px solid var(--black);
+}
+::-webkit-input-placeholder{
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.send_btn{
+    width:20%;
+    height:50px;
+    margin: 0 auto;
+}
+.send_btn button{
+    width:100%;
+    height:100%;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid var(--black);
+    border-radius: 20px;
+}
 /*footer*/
 footer{
     width: 100%;
@@ -229,3 +326,4 @@ footer{
     background-color: var(--navy);
     color: var(--gray);
 }
+
