@@ -389,7 +389,7 @@ button{
     color: var(--white);
     background-color: var(--skyBlue);
     border: 1px solid var(--skyBlue);
-    border-radius: 3px;
+    border-radius: 50px;
 }
 .email{
     background: url(../image/email.png) no-repeat center/64%;
