@@ -98,6 +98,14 @@
                                 <span class="pug"></span>
                                 <p>PUG</p>
                             </div>
+                            <div>
+                                <span class="sass"></span>
+                                <p>Sass</p>
+                            </div>
+                            <div>
+                                <span class="react"></span>
+                                <p>React</p>
+                            </div>
                         </div> 
                     </div>
                     <div class="line"></div>
@@ -135,39 +143,39 @@
                                 </div>
                                 <div class="project_review">
                                     <div class="project_txt">
-                                        프로젝트 한줄 설명
+                                        유튜브 클론 코딩 프로젝트
                                     </div>
                                     <div class="project_button">
-                                        <a href="#">View</a>
-                                        <a href="#">Github</a>
+                                        <a href="https://wetube-reloaded2021.herokuapp.com/" target="_blank">View</a>
+                                        <a href="https://github.com/yungyungGwon/wetube-reloaded" target="_blank">Github</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="project_title">
-                                    <em>Toy Project1</em>
+                                    <em>Movie Web</em>
                                 </div>
                                 <div class="project_review">
                                     <div class="project_txt">
                                         프로젝트 한줄 설명
                                     </div>
                                     <div class="project_button">
-                                        <a>View</a>
-                                        <a>Github</a>
+                                        <a href="https://yungyunggwon.github.io/movie_web/" target="_blank">View</a>
+                                        <a href="https://github.com/yungyungGwon/movie_web" target="_blank">Github</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="project_title">
-                                    <em>Toy Project2</em>
+                                    <em>Nwitter</em>
                                 </div>
                                 <div class="project_review">
                                     <div class="project_txt">
-                                        프로젝트 한줄 설명
+                                        Twitter clone coding
                                     </div>
                                     <div class="project_button">
-                                        <a>View</a>
-                                        <a>Github</a>
+                                        <a href="https://yungyunggwon.github.io/twitter_clone/" target="_blank">View</a>
+                                        <a href="https://github.com/yungyungGwon/twitter_clone" target="_blank">Github</a>
                                     </div>
                                 </div>
                             </li>
@@ -258,10 +266,14 @@
         </content>
         <footer>
             <div>
-                @2021 권윤경 all right reserved.
+                <em id="year"></em> 
             </div>
         </footer>    
     </div>
+    <script>
+        const y = new Date().getFullYear();
+        document.getElementById("year").innerHTML ="&copy; "+ y + " 권윤경 all right reserved.";
+    </script>
 <!-- footer 고정 참고 url : https://www.youtube.com/watch?v=who42wBr1ns -->
 </body>
 
