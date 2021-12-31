@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon --exec node src/init.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -15,5 +17,9 @@
     "jquery": "^3.6.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.13"
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "homepage": "https://yungyungGwon.github.io/Portfolio"
 }
