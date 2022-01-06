@@ -1,4 +1,4 @@
 /node_modules
 /src/public/image
-.DS_Store
-.vscode
+/.DS_Store
+/.vscode
