@@ -318,6 +318,9 @@ button{
     border-radius: 20px;
     background-color: var(--gray3);
 }
+.wetube{
+    background-color: var(--red);
+}
 
 /**contact content**/
 .contact{
