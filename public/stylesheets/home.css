@@ -13,7 +13,8 @@
     --wetube: rgba(234, 50, 30, 0.9);
     --movie-app-text: rgb(129,216, 247);
     --movie-app-back:rgb(25,25,25);
-    --nwitter:rgb(73,115,228);
+    --nwitter:rgb(73,115,233);
+    --coin-site : rgb(233,151,61);
 }
 html, body{
     font-family: 'Source Sana Pro';
@@ -57,12 +58,14 @@ button{
     width:100%;
     z-index:100;
     position:fixed;
-    background-color:var(--white);
+    background-color:var(--white) !important;
 }
 .header_wrap{
+    height: 40px;
     display: flex;
     padding: 8px 12px; 
     justify-content: space-between;
+    justify-items: center;
 }
 .header_title{
     padding-top: 10px;
@@ -71,6 +74,7 @@ button{
 }
 .gnb{
     font-size: 18px;
+    margin-top: 15px;
 }
 .main_menu{
     display: none;
@@ -101,6 +105,8 @@ button{
     }
     .gnb_list{
         flex-direction: column;
+        background-color: rgba(255,255,255,0.8);
+        
     }
     .gnb_list li{
         text-align: center;
@@ -334,6 +340,10 @@ button{
 .nwitter{
     background-color: var(--nwitter);
     border: 1px solid var(--nwitter);
+}
+.coin-site{
+    background-color: var(--coin-site);
+    border: 1px solid var(--coin-site);
 }
 /**contact content**/
 .contact{
