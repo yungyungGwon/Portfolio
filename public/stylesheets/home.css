@@ -353,7 +353,7 @@ button{
     display: flex;
 }
 .contact_left{
-    width: 50%;
+    width: 100%;
     flex-direction: column;
 }
 .contact_left div{
