@@ -1,6 +1,6 @@
 # Portfolio
 
-* 보러가기 : https://yungyunggwon.github.io/twitter_clone/
+* 보러가기 : https://yungyunggwon.github.io/Portfolio/
 
 ## 프로젝트 목표
 
