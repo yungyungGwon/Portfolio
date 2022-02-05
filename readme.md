@@ -15,12 +15,15 @@ Javascript, CSS3, React, Firebase
 * Home 
 <br>
 <img src="./public/image/portfolio_img_1.png" width="100%" height="60%"></img>
+
 * Profile
 <br>
 <img src="./public/image/portfolio_img_2.png" width="100%" height="60%"></img>
+
 * Project
 <br>
 <img src="./public/image/portfolio_img_3.png" width="100%" height="60%"></img>
+
 * Contact
 <br>
 <img src="./public/image/portfolio_img_4.png" width="100%" height="60%"></img>
