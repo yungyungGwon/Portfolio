@@ -12,5 +12,5 @@ Javascript, CSS3, React, Firebase
 
 ## 프로젝트 기능 설명
 
-<img src="./public/image/portfolio_img_1" width="70%" height="50%"></img>
+<img src="./public/image/portfolio_img_1.png" width="70%" height="50%"></img>
 
