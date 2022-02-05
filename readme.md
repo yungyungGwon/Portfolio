@@ -13,10 +13,10 @@ Javascript, CSS3, React, Firebase
 ## 프로젝트 기능 설명
 
 * Home 
-<img src="./public/image/portfolio_img_1.png" width="100%" height="60%"></img>
+<img src="./public/image/portfolio_img_1.png" width="100%" height="60%"></img><br>
 * Profile
-<img src="./public/image/portfolio_img_2.png" width="100%" height="60%"></img>
+<img src="./public/image/portfolio_img_2.png" width="100%" height="60%"></img><br>
 * Project
-<img src="./public/image/portfolio_img_3.png" width="100%" height="60%"></img>
+<img src="./public/image/portfolio_img_3.png" width="100%" height="60%"></img><br>
 * Contact
-<img src="./public/image/portfolio_img_4.png" width="100%" height="60%"></img>
+<img src="./public/image/portfolio_img_4.png" width="100%" height="60%"></img><br>
