@@ -234,7 +234,10 @@ button{
     background: url(../image/css.png) no-repeat center/84%;
 }
 .js{
-    background: url(../image/javascript.png) no-repeat center/64%;
+    background: url(../image/javascript_v2.png) no-repeat center/64%;
+}
+.ts{
+    background: url(../image/typescript.png) no-repeat center/64%;   
 }
 .pug{
     background: url(../image/pug.png) no-repeat center/100%;
@@ -250,6 +253,9 @@ button{
 }
 .express{
     background: url(../image/Express.png) no-repeat center/110%;  
+}
+.mysql{
+    background: url(../image/mysql.png) no-repeat center/93%; 
 }
 .mongoDB{
     background: url(../image/mongoDB.png) no-repeat center/99%;  
