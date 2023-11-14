@@ -1,4 +1,11 @@
+# dependencies
 /node_modules
-/src/public/image
+
+# misc
 *.DS_Store
-*.vscode
+
+# next.js
+/.next/
+
+# production
+/build
