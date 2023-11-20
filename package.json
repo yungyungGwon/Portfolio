@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
     "dev": "NODE_ENV=development node server.js",
@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "author": "Yungyoung Gwon <100830599+Yungyoung-VIRNECT@users.noreply.github.com>",
+  "author": "Yungyoung Gwon",
   "license": "ISC",
   "description": "",
   "dependencies": {
@@ -21,13 +21,15 @@
     "next": "^14.0.1",
     "nodemon": "^2.0.13",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.1"
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
     "@types/react": "^18.2.37",
     "eslint": "^8.53.0",
     "eslint-config-next": "^14.0.1",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
     "gh-pages": "^3.2.3",
     "typescript": "^5.2.2"
   },
