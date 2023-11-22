@@ -1,11 +1,10 @@
 import React from 'react'
-import Header from '../containers/header'
+import Header from '../components/header'
 
 const Index = () => {
     return(
     <div>
         <Header /> 
-        HELLO 
     </div>
     )
 }

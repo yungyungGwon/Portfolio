@@ -2,6 +2,24 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    async headers() {
+        return [
+          {
+            source: '/(.*?)',
+            headers: [
+              {
+                key: 'Cross-Origin-Embedder-Policy',
+                value: 'require-corp',
+              },
+              {
+                key: 'Cross-Origin-Opener-Policy',
+                value: 'same-origin',
+              },
+            ],
+          },
+        ]
+      },
+
       // Set for server info hide
       poweredByHeader: false,
       // Set loader and plugin
@@ -51,11 +69,5 @@ const nextConfig = {
     compiler: {
         styledComponents: true,
     },
-
-    images: {
-        domains: ['localhost']
-        // loader: 'imgix',
-        // path: 'http://127.0.0.1:4040/',
-    }
 }
 module.exports = nextConfig
