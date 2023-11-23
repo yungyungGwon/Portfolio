@@ -14,6 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/react-dom": "^18.2.17",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
@@ -25,8 +26,8 @@
     "styled-components": "^6.1.1"
   },
   "devDependencies": {
-    "@types/node": "^20.9.0",
-    "@types/react": "^18.2.37",
+    "@types/node": "^20.9.4",
+    "@types/react": "^18.2.38",
     "eslint": "^8.53.0",
     "eslint-config-next": "^14.0.1",
     "fork-ts-checker-webpack-plugin": "^9.0.2",
