@@ -36,49 +36,45 @@ const Header = ({setComponent}: any) => {
 
     return(
         <Wrapper>
-            <div className='title' onClick={() => {
-                Router.reload()
-            }}>
+            <div className='title' onClick={() => { setComponent(<Home />)}}>
                 Hello, Portfolio World
             </div>
-            {/* <div className='menuBtn'> */}
-                {isVisible ? (
-                <div className='gnbMenu'>
-                    <button onClick={() => setIsVisible(!isVisible)}>
-                        <Image 
-                            src={CloseIcon}
-                            width={25}
-                            height={25}
-                            loading='lazy'
-                            unoptimized
-                            alt='CloseIcon'/>
-                    </button>
-                    <ul className='gnbItem'>
-                        {MenuList.map(item => {
-                            return (
-                                <li
-                                    key={item.itemKey} 
-                                    onClick={() => {
-                                        setComponent(item.component)
-                                        setIsVisible(!isVisible)
-                                    }}>{item.title}
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </div>
-                ):(
+            {isVisible ? (
+            <div className='gnbMenu'>
                 <button onClick={() => setIsVisible(!isVisible)}>
                     <Image 
-                        src={HambugerIcon}
-                        width={25}
-                        height={25}
+                        src={CloseIcon}
+                        width={30}
+                        height={30}
                         loading='lazy'
                         unoptimized
-                        alt='HambugerIcon'/>
+                        alt='CloseIcon'/>
                 </button>
-                )}
-            {/* </div> */}
+                <ul className='gnbItem'>
+                {MenuList.map(item => {
+                    return (
+                        <li
+                            key={item.itemKey} 
+                            onClick={() => {
+                                setComponent(item.component)
+                                setIsVisible(!isVisible)
+                            }}>{item.title}
+                        </li>
+                    )
+                })}
+            </ul>
+            </div>
+            ):(
+            <button onClick={() => setIsVisible(!isVisible)}>
+                <Image 
+                    src={HambugerIcon}
+                    width={30}
+                    height={30}
+                    loading='lazy'
+                    unoptimized
+                    alt='HambugerIcon'/>
+            </button>
+            )}
         </Wrapper>
     )
 }
