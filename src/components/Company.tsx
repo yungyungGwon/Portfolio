@@ -1,10 +1,10 @@
-const Project = () => {
+const Company = () => {
 
     return (
         <div style={{color:'orange'}}>
-            Project
+            Company
         </div>
     )
 }
 
-export default Project
+export default Company

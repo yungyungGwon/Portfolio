@@ -1,31 +1,25 @@
-import Wrapper from '../assets/styles/header'
-import Image from 'next/image'
-import Router from 'next/router'
-import Home from '../components/Home'
+import Wrapper from '../public/assets/styles/header'
 import Profile from '../components/Profile'
-import Project from '../components/Project'
+import Student from '../components/Student'
+import Company from '../components/Company'
 import Contact from '../components/Contact'
-import HambugerIcon from '../assets/images/hamburger2.png'
-import CloseIcon from '../assets/images/close.png'
 import { useState } from 'react'
 
-const Header = ({setComponent}: any) => {
-    const [ isVisible, setIsVisible ] = useState<Boolean>(false)
-    const MenuList = [
+const MenuList = [
         {
             itemKey: 0,
-            title: 'Home',
-            component: <Home />
-        },
-        {
-            itemKey: 1,
             title: 'Profile',
             component: <Profile />  
         },
         {
+            itemKey: 1,
+            title: 'Student',
+            component: <Student />
+        },
+        {
             itemKey: 2,
-            title: 'Project',
-            component: <Project />
+            title: 'Company',
+            component: <Company />
         },
         {
             itemKey: 3,
@@ -34,12 +28,29 @@ const Header = ({setComponent}: any) => {
         },
     ]
 
+const Header = ({setComponent}: any) => {
+    const [ isVisible, setIsVisible ] = useState<Boolean>(false)
+
     return(
         <Wrapper>
-            <div className='title' onClick={() => { setComponent(<Home />)}}>
-                Hello, Portfolio World
+            <div className='navBarTitle' onClick={() => { setComponent(<Profile />)}}>
+                Yungyong Gwon
             </div>
-            {isVisible ? (
+            <div className='navBarContent'>
+                {MenuList.map(item => {
+                    return (
+                        <div
+                            key={item.itemKey} 
+                            onClick={() => {
+                                setComponent(item.component)
+                                setIsVisible(!isVisible)
+                            }}>{item.title}
+                        </div>
+                    )
+                })}
+            </div>
+
+            {/* {isVisible ? (
             <div className='gnbMenu'>
                 <button onClick={() => setIsVisible(!isVisible)}>
                     <Image 
@@ -51,18 +62,18 @@ const Header = ({setComponent}: any) => {
                         alt='CloseIcon'/>
                 </button>
                 <ul className='gnbItem'>
-                {MenuList.map(item => {
-                    return (
-                        <li
-                            key={item.itemKey} 
-                            onClick={() => {
-                                setComponent(item.component)
-                                setIsVisible(!isVisible)
-                            }}>{item.title}
-                        </li>
-                    )
-                })}
-            </ul>
+                    {MenuList.map(item => {
+                        return (
+                            <li
+                                key={item.itemKey} 
+                                onClick={() => {
+                                    setComponent(item.component)
+                                    setIsVisible(!isVisible)
+                                }}>{item.title}
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
             ):(
             <button onClick={() => setIsVisible(!isVisible)}>
@@ -74,7 +85,7 @@ const Header = ({setComponent}: any) => {
                     unoptimized
                     alt='HambugerIcon'/>
             </button>
-            )}
+            )} */}
         </Wrapper>
     )
 }

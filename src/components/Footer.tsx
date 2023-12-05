@@ -1,11 +1,16 @@
-import Wrapper from '../assets/styles/footer'
+import Wrapper from '../public/assets/styles/footer'
 import { useEffect, useState } from 'react'
 
 const Footer = () => {
-    const [ date, setDate ] = useState(new Date().getFullYear())
+    const [date, setDate] = useState<number>(0)
+    
+    useEffect(() => {
+        setDate(new Date().getFullYear())
+    }, [])
+
     return (
         <Wrapper>
-            &copy;{date} 권윤경 all right reserved
+            &copy;{date} YungyoungGwon all right reserved
         </Wrapper>
     )
 }

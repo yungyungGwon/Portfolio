@@ -1,18 +1,18 @@
 import React from 'react'
 import Header from '../components/Header'
-import Home from '../components/Home'
+import Profile from '../components/Profile'
 import Footer from '../components/Footer'
 import { useState } from 'react'
 
 const Index = () => {
-    const [component, setComponent] = useState<any>(<Home />)
+    const [component, setComponent] = useState<any>(<Profile />)
     
     return(
-    <div>
+    <>
         <Header setComponent={setComponent}/>
         {component}
         <Footer />
-    </div>
+    </>
     )
 }
 
